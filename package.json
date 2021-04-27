@@ -1,7 +1,7 @@
 {
-  "name": "Protocol & the Mind-Palace Viewer",
-  "productName": "Protocol & the Mind-Palace Viewer",
-  "description": "My Electron application description",
+  "name": "MinimalBrowser",
+  "productName": "MinimalBrowser",
+  "description": "MinimalBrowser",
   "keywords": [],
   "main": "./main.js",
   "version": "1.0.0",
