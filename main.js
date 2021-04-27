@@ -16,7 +16,7 @@ app.on('ready', () => {
     minWidth: 350,
     minHeight: 350,
     resizable: true,
-    icon: "M:/The Algorithm/Protocol & the mind-palace/Documentation/Visual Resources/Icon.png"})
+    icon: "Icon.png"})
     myWindow.setTitle(require('./package.json').name);
     myWindow.loadURL('file://' + __dirname + '/index.html')
 
