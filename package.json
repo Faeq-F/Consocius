@@ -1,0 +1,16 @@
+{
+  "name": "Protocol & the Mind-Palace Viewer",
+  "productName": "Protocol & the Mind-Palace Viewer",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "faeqf",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "10.1.1"
+  }
+}
