@@ -1,0 +1,86 @@
+{
+  "name": "consocius",
+  "productName": "Consocius",
+  "version": "3.4.0",
+  "license": "",
+  "description": "Browser",
+  "homepage": "https://faeq-f.github.io/Consocius/",
+  "author": {
+    "name": "Faeq Faisal",
+    "email": "faeqfaisal@hotmail.co.uk"
+  },
+  "main": "main.js",
+  "scripts": {
+    "lint": "eslint -c .eslintrc.json . --ext .js --fix",
+    "debug": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "files": [
+    "*.js",
+    "build",
+    "node_modules"
+  ],
+  "build": {
+    "icon": "browser/assets/icons/icon.png",
+    "appId": "Consocius.Browser",
+    "mac": {
+      "icon": "browser/assets/icons/mac_icon.icns",
+      "category": "public.app-category.utilities",
+      "target": [
+        "default"
+      ]
+    },
+    "linux": {
+      "icon": "browser/assets/icons/linux_icon.png",
+      "category": "",
+      "target": [
+        "deb",
+        "rpm"
+      ]
+    },
+    "win": {
+      "icon": "browser/assets/icons/win_icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ],
+      "requestedExecutionLevel": "asInvoker"
+    },
+    "fileAssociations": {
+      "ext": [
+        "html",
+        "htm"
+      ],
+      "name": "Web files",
+      "role": "Viewer"
+    },
+    "protocols": {
+      "name": "Web urls",
+      "schemes": [
+        "http",
+        "https"
+      ],
+      "role": "Viewer"
+    },
+    "nsis": {
+      "perMachine": true
+    }
+  },
+  "dependencies": {
+    "dexie": "^3.0.1",
+    "feather-icons": "^4.28.0",
+    "publicsuffixlist": "^0.3.0"
+  },
+  "devDependencies": {
+    "electron": "^8.2.5",
+    "electron-builder": "^22.6.0",
+    "eslint": "^6.8.0"
+  }
+}
